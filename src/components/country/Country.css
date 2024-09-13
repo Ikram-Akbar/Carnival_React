@@ -1,0 +1,23 @@
+.country-card {
+    width: 300px; /* Fixed width */
+    height: 400px; /* Fixed height */
+    margin: 10px; /* Optional: space between cards */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Ensures consistent spacing within the card */
+  }
+  
+  .card-img {
+    height: 130px; /* Fixed height for images */
+    object-fit: cover; /* Keeps image aspect ratio, filling the area */
+  }
+  
+  .card-body {
+    flex-grow: 1; /* Allows the card body to grow and fill space */
+    overflow: hidden; /* Prevents content overflow */
+  }
+  
+  .list-group-flush {
+    flex-grow: 1; /* Ensures the list group takes available space */
+  }
+  
