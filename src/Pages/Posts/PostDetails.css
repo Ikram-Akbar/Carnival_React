@@ -1,0 +1,31 @@
+.fancy-card {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.fancy-card:hover {
+    transform: scale(1.02);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card-title {
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.card-body-text {
+    font-size: 1rem;
+}
+
+.fancy-button {
+    font-weight: bold;
+    font-size: 1rem;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.fancy-button:hover {
+    background-color: #0056b3;
+}

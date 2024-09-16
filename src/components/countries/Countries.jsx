@@ -1,6 +1,8 @@
 import { useEffect, useState } from "react";
-import { Container, Row, Col, Pagination, Table } from "react-bootstrap";
+import { Container, Row, Col, Table } from "react-bootstrap";
 import Country from "../country/Country";
+import ResponsivePagination from 'react-responsive-pagination';
+import 'react-responsive-pagination/themes/classic.css';
 
 const Countries = () => {
     const [countries, setCountries] = useState([]);
@@ -14,30 +16,12 @@ const Countries = () => {
             .catch(error => console.error("Error fetching data:", error)); // Optional: handle errors
     }, []);
 
-    // Calculate the items to display on the current page
     const itemsPerPage = 8;
+    // Calculate the items to display on the current page
     const offset = (currentPage - 1) * itemsPerPage;
     const currentCountries = countries.slice(offset, offset + itemsPerPage);
-    const pageCount = Math.ceil(countries.length / itemsPerPage);
-
-    // Handle page change
-    const handlePageChange = (pageNumber) => {
-        setCurrentPage(pageNumber);
-    };
-
-    // Generate pagination items
-    const paginationItems = [];
-    for (let number = 1; number <= pageCount; number++) {
-        paginationItems.push(
-            <Pagination.Item
-                key={number}
-                active={number === currentPage}
-                onClick={() => handlePageChange(number)}
-            >
-                {number}
-            </Pagination.Item>
-        );
-    }
+    // Calculate total number of pages
+    const totalPages = Math.ceil(countries.length / itemsPerPage);
 
     // Handler for visited country
     const handleVisitedCountry = (country) => {
@@ -58,20 +42,14 @@ const Countries = () => {
                                 </Col>
                             ))}
                         </Row>
-                        {/* Adjust Pagination Layout */}
+                        {/* Responsive Pagination */}
                         <Row className="justify-content-center mt-4">
-                            <Col xs="auto"> {/* Use a responsive column to contain pagination */}
-                                <Pagination className="d-flex flex-wrap justify-content-center">
-                                    <Pagination.Prev
-                                        onClick={() => handlePageChange(currentPage - 1)}
-                                        disabled={currentPage === 1}
-                                    />
-                                    {paginationItems}
-                                    <Pagination.Next
-                                        onClick={() => handlePageChange(currentPage + 1)}
-                                        disabled={currentPage === pageCount}
-                                    />
-                                </Pagination>
+                            <Col xs="auto">
+                                <ResponsivePagination
+                                    current={currentPage}
+                                    total={totalPages}
+                                    onPageChange={setCurrentPage}
+                                />
                             </Col>
                         </Row>
                     </Col>
@@ -79,31 +57,30 @@ const Countries = () => {
                         <Container>
                             <Row>
                                 <Col>
-                                    {visitedCountry.length > 0
-                                        ? <>
-                                        <h6>Visited Countries - {visitedCountry.length}</h6>
-                                        <Table striped bordered hover>
-                                    <thead>
-                                        <tr>
-                                            <th>#</th>
-                                            <th>Country Name</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        {visitedCountry.map((vc, idx) => (
-                                            <tr key={idx}>
-                                                <td>{idx + 1}</td>
-                                                <td>{vc.name.common}</td>
-                                            </tr>
-                                        ))}
-                                    </tbody>
-                                </Table>
+                                    {visitedCountry.length > 0 ? (
+                                        <>
+                                            <h6>Visited Countries - {visitedCountry.length}</h6>
+                                            <Table striped bordered hover>
+                                                <thead>
+                                                    <tr>
+                                                        <th>#</th>
+                                                        <th>Country Name</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    {visitedCountry.map((vc, idx) => (
+                                                        <tr key={idx}>
+                                                            <td>{idx + 1}</td>
+                                                            <td>{vc.name.common}</td>
+                                                        </tr>
+                                                    ))}
+                                                </tbody>
+                                            </Table>
                                         </>
-                                        : "Not Visited Yet"}
+                                    ) : (
+                                        "Not Visited Yet"
+                                    )}
                                 </Col>
-                            </Row>
-                            <Row>
-                               
                             </Row>
                         </Container>
                     </Col>

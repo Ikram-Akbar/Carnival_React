@@ -15,9 +15,9 @@ const Country = ({ country, handleVisitedCountry }) => {
                 <Card >
                     <Card.Img style={{ width: "100%", height: "130px" }} variant="top" src={country.flags.png} />
                     <Card.Body>
-                        <Card.Title>
+                        <Card.Title className="fs-6">
                             {country.name.official}
-                            {visited ? <i className="bi bi-check-circle-fill"></i> : <i className="bi bi-airplane-fill"></i>}
+                            {visited ? <i className="bi bi-check-circle-fill mx-1"></i> : <i className="bi bi-airplane-fill mx-1"></i>}
                         </Card.Title>
                     </Card.Body>
                     <ListGroup className="list-group-flush text-start">

@@ -1,0 +1,139 @@
+{
+    "menuItems": [
+        {
+            "id": 1,
+            "title": "Classic Burger",
+            "image": "https://i.postimg.cc/SsPvvsPJ/farhad-ibrahimzade-d-FE0-FNVd4k0-unsplash.jpg",
+            "description": "A classic beef burger with lettuce, tomato, and cheese.",
+            "price": "$8.99",
+            "recipe": "Grill beef patty, toast the bun, add lettuce, tomato, cheese, and assemble.",
+            "rating": 4.5
+        },
+        {
+            "id": 2,
+            "title": "Veggie Pizza",
+            "image": "https://i.postimg.cc/rmsHjWQB/joel-de-vriend-R5t0g9-La-Zu0-unsplash.jpg",
+            "description": "A pizza topped with bell peppers, onions, mushrooms, and olives.",
+            "price": "$12.99",
+            "recipe": "Prepare pizza dough, spread tomato sauce, add cheese, top with veggies, and bake.",
+            "rating": 4.7
+        },
+        {
+            "id": 3,
+            "title": "Caesar Salad",
+            "image": "https://i.postimg.cc/XvVmZtF7/megan-thomas-x-Mh-ww8-HN-Q-unsplash.jpg",
+            "description": "Crispy romaine lettuce with Caesar dressing, croutons, and Parmesan cheese.",
+            "price": "$7.99",
+            "recipe": "Toss romaine lettuce with Caesar dressing, top with croutons and Parmesan.",
+            "rating": 4.3
+        },
+        {
+            "id": 4,
+            "title": "Spaghetti Bolognese",
+            "image": "https://i.postimg.cc/3wn629Cj/nadine-primeau-ye-Eo-MHtk-Cu-M-unsplash.jpg",
+            "description": "Traditional spaghetti served with a rich Bolognese sauce.",
+            "price": "$10.99",
+            "recipe": "Cook spaghetti, prepare Bolognese sauce with ground beef and tomatoes, and combine.",
+            "rating": 4.6
+        },
+        {
+            "id": 5,
+            "title": "Chicken Tacos",
+            "image": "https://i.postimg.cc/prn6bvNk/pablo-merchan-montes-0n-T08-Z-Mhi-E-unsplash.jpg",
+            "description": "Tacos filled with grilled chicken, avocado, and salsa.",
+            "price": "$9.99",
+            "recipe": "Grill chicken, prepare salsa, assemble tacos with chicken, avocado, and salsa.",
+            "rating": 4.4
+        },
+        {
+            "id": 6,
+            "title": "Margarita Pizza",
+            "image": "https://i.postimg.cc/c6y5dz0W/ulvi-safari-Mb6-M52y-flw-unsplash.jpg",
+            "description": "A simple pizza topped with fresh basil, tomatoes, and mozzarella.",
+            "price": "$11.99",
+            "recipe": "Prepare pizza dough, spread tomato sauce, add mozzarella, and fresh basil, then bake.",
+            "rating": 4.8
+        },
+        {
+            "id": 7,
+            "title": "Grilled Cheese Sandwich",
+            "image": "https://i.postimg.cc/gk3G3Fwv/yusuf-evli-2-Bd-Ix4-M6vn-E-unsplash.jpg",
+            "description": "A delicious grilled cheese sandwich with melted cheddar.",
+            "price": "$6.49",
+            "recipe": "Butter bread slices, add cheese, and grill until golden brown and cheese is melted.",
+            "rating": 4.2
+        },
+        {
+            "id": 8,
+            "title": "Beef Stroganoff",
+            "image": "https://i.postimg.cc/Df92Wyzv/farhad-ibrahimzade-AMirc-Im-AJv-A-unsplash.jpg",
+            "description": "Tender beef strips in a creamy mushroom sauce.",
+            "price": "$14.99",
+            "recipe": "Cook beef strips, prepare mushroom sauce with cream, and combine with beef.",
+            "rating": 4.6
+        },
+        {
+            "id": 9,
+            "title": "Chicken Alfredo Pasta",
+            "image": "https://i.postimg.cc/9XRmFqCg/kitera-dent-BQn-Oq0-Th-JMk-unsplash.jpg",
+            "description": "Creamy Alfredo pasta with grilled chicken.",
+            "price": "$12.49",
+            "recipe": "Cook pasta, prepare Alfredo sauce with cream and Parmesan, add grilled chicken.",
+            "rating": 4.7
+        },
+        {
+            "id": 10,
+            "title": "Greek Salad",
+            "image": "https://i.postimg.cc/rmsHjWQB/joel-de-vriend-R5t0g9-La-Zu0-unsplash.jpg",
+            "description": "A refreshing salad with cucumbers, tomatoes, olives, and feta cheese.",
+            "price": "$8.49",
+            "recipe": "Combine cucumbers, tomatoes, olives, and feta cheese, and toss with olive oil and herbs.",
+            "rating": 4.5
+        },
+        {
+            "id": 11,
+            "title": "Shrimp Tacos",
+            "image": "https://i.postimg.cc/XvVmZtF7/megan-thomas-x-Mh-ww8-HN-Q-unsplash.jpg",
+            "description": "Tacos filled with spicy shrimp, avocado, and cilantro lime sauce.",
+            "price": "$11.99",
+            "recipe": "Cook shrimp with spices, prepare cilantro lime sauce, and assemble tacos.",
+            "rating": 4.6
+        },
+        {
+            "id": 12,
+            "title": "BBQ Ribs",
+            "image": "https://i.postimg.cc/3wn629Cj/nadine-primeau-ye-Eo-MHtk-Cu-M-unsplash.jpg",
+            "description": "Tender pork ribs coated in BBQ sauce and grilled to perfection.",
+            "price": "$15.99",
+            "recipe": "Marinate ribs in BBQ sauce, grill until tender and caramelized.",
+            "rating": 4.8
+        },
+        {
+            "id": 13,
+            "title": "Vegetable Stir Fry",
+            "image": "https://i.postimg.cc/prn6bvNk/pablo-merchan-montes-0n-T08-Z-Mhi-E-unsplash.jpg",
+            "description": "A mix of vegetables stir-fried with soy sauce and garlic.",
+            "price": "$9.49",
+            "recipe": "Stir-fry vegetables with soy sauce, garlic, and ginger.",
+            "rating": 4.4
+        },
+        {
+            "id": 14,
+            "title": "Lemon Bars",
+            "image": "https://i.postimg.cc/c6y5dz0W/ulvi-safari-Mb6-M52y-flw-unsplash.jpg",
+            "description": "Tangy lemon bars with a sweet, buttery crust.",
+            "price": "$5.99",
+            "recipe": "Prepare a buttery crust, mix lemon filling, bake and cool.",
+            "rating": 4.7
+        },
+        {
+            "id": 15,
+            "title": "Chocolate Cake",
+            "image": "https://i.postimg.cc/gk3G3Fwv/yusuf-evli-2-Bd-Ix4-M6vn-E-unsplash.jpg",
+            "description": "Rich chocolate cake with a moist texture and chocolate frosting.",
+            "price": "$6.99",
+            "recipe": "Mix ingredients for cake, bake, and frost with chocolate icing.",
+            "rating": 4.9
+        }
+    ]
+}
