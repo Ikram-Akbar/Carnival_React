@@ -9,7 +9,7 @@ import { Link } from 'react-router-dom';
 const Navigate = () => {
     return (
         <div>
-            <Navbar expand="lg" bg="dark" data-bs-theme="dark" >
+            <Navbar  expand="lg" bg="dark" data-bs-theme="dark" >
                 <Container>
                     <Navbar.Brand href="#home">Carnival</Navbar.Brand>
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
